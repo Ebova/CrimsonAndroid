@@ -1,7 +1,7 @@
 source build/envsetup.sh
 lunch aosp_hammerhead-user
 
-cp -r ../../../hammerhead_drivers/* .
+cp -r ../../../patch_res/hammerhead_drivers/* .
 
 cp ../../../patch_res/hammerhead_device.mk device/lge/hammerhead/device.mk
 
