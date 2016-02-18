@@ -1,0 +1,2 @@
+mkdir ../../img/
+cp out/target/product/hammerhead/*.img ../../img/
