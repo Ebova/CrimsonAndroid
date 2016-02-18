@@ -15,4 +15,7 @@ echo Making OS sane...
 sudo update-alternatives --config java
 sudo update-alternatives --config javac
 
+echo Doing device specific things...
+source DeviceInit
+
 echo Everything done!

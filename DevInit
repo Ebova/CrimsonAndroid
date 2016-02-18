@@ -1,0 +1,26 @@
+initdir=$(pwd)
+
+mkdir -p patch_res/hammerhead_drivers
+cd patch_res/hammerhead_drivers
+
+wget https://dl.google.com/dl/android/aosp/broadcom-hammerhead-mmb29q-4332178f.tgz
+wget https://dl.google.com/dl/android/aosp/lge-hammerhead-mmb29q-995a5660.tgz
+wget https://dl.google.com/dl/android/aosp/qcom-hammerhead-mmb29q-5d820575.tgz
+
+tar xvf broadcom-hammerhead-mmb29q-4332178f.tgz
+tar xvf lge-hammerhead-mmb29q-995a5660.tgz
+tar xvf qcom-hammerhead-mmb29q-5d820575.tgz
+
+./extract-broadcom-hammerhead.sh
+./extract-lge-hammerhead.sh
+./extract-qcom-hammerhead.sh
+
+rm broadcom-hammerhead-mmb29q-4332178f.tgz
+rm lge-hammerhead-mmb29q-995a5660.tgz
+rm qcom-hammerhead-mmb29q-5d820575.tgz
+
+rm extract-broadcom-hammerhead.sh
+rm extract-lge-hammerhead.sh
+rm extract-qcom-hammerhead.sh
+
+cd $initdir
