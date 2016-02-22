@@ -83,7 +83,7 @@
             android:textAppearance="@style/TextAppearance.StatusBar.Clock"
             android:gravity="center"
             android:id="@id/clock"
-            android:layout_width=".1"
+            android:layout_widthPercent="10%"
             android:layout_height="match_parent"
             android:singleLine="true"
             android:paddingStart="7.0dip"
@@ -92,7 +92,7 @@
         <com.android.keyguard.AlphaOptimizedLinearLayout
             android:id="@+id/system_icon_area"
             android:gravity="right|center"
-            android:layout_width=".45"
+            android:layout_width="45%"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             >
