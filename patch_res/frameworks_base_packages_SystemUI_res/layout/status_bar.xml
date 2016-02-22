@@ -83,7 +83,7 @@
             android:textAppearance="@style/TextAppearance.StatusBar.Clock"
             android:gravity="center"
             android:id="@id/clock"
-            android:layout_width="match_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:singleLine="true"
             android:paddingStart="7.0dip"
