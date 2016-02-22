@@ -50,6 +50,17 @@
         android:orientation="horizontal"
         >
 
+	<com.android.systemui.statusbar.policy.Clock
+            android:textAppearance="@style/TextAppearance.StatusBar.Clock"
+            android:gravity="center"
+            android:id="@id/clock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:paddingStart="7.0dip"
+            />
+
+
         <com.android.systemui.statusbar.AlphaOptimizedFrameLayout
             android:id="@+id/notification_icon_area"
             android:layout_width="0dip"
@@ -78,17 +89,6 @@
                     android:orientation="horizontal"/>
             </com.android.keyguard.AlphaOptimizedLinearLayout>
         </com.android.systemui.statusbar.AlphaOptimizedFrameLayout>
-
-        <com.android.systemui.statusbar.policy.Clock
-            android:textAppearance="@style/TextAppearance.StatusBar.Clock"
-            android:gravity="center"
-            android:id="@id/clock"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:singleLine="true"
-            android:paddingStart="7.0dip"
-            /> 
-            > 
 
         <com.android.keyguard.AlphaOptimizedLinearLayout
             android:id="@+id/system_icon_area"
