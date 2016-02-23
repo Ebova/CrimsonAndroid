@@ -54,6 +54,7 @@
             android:id="@+id/notification_icon_area"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:gravity="left"
             android:layout_weight="1"
             android:orientation="horizontal"
             >
@@ -83,7 +84,7 @@
             android:textAppearance="@style/TextAppearance.StatusBar.Clock"
             android:gravity="center"
             android:id="@id/clock"
-            android:layout_widthPercent="10%"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:singleLine="true"
             android:paddingStart="7.0dip"
@@ -91,8 +92,8 @@
 
         <com.android.keyguard.AlphaOptimizedLinearLayout
             android:id="@+id/system_icon_area"
-            android:gravity="right|center"
-            android:layout_widthPercent="45%"
+            android:gravity="right"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             >
