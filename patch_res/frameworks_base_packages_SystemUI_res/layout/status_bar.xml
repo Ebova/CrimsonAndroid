@@ -92,7 +92,7 @@
         <com.android.keyguard.AlphaOptimizedLinearLayout
             android:id="@+id/system_icon_area"
             android:gravity="right|center"
-            android:layout_width="45%"
+            android:layout_widthPercent="45%"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             >
