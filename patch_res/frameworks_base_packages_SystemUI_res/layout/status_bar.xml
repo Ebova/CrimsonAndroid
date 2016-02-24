@@ -56,7 +56,6 @@
             android:layout_height="match_parent"
             android:gravity="left"
             android:layout_weight="1"
-            android:layout_above="@id/clock"
             android:orientation="horizontal"
             >
             <!-- The alpha of this area is both controlled from PhoneStatusBarTransitions and
@@ -79,28 +78,29 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal"/>
             </com.android.keyguard.AlphaOptimizedLinearLayout>
-        </com.android.systemui.statusbar.AlphaOptimizedFrameLayout>
 
-        <com.android.systemui.statusbar.policy.Clock
-            android:textAppearance="@style/TextAppearance.StatusBar.Clock"
-            android:gravity="center"
-            android:id="@id/clock"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:singleLine="true"
-            android:paddingStart="70.0dip"
-            android:paddingEnd="70.0dip"
+            <com.android.systemui.statusbar.policy.Clock
+                android:textAppearance="@style/TextAppearance.StatusBar.Clock"
+                android:gravity="center"
+                android:id="@id/clock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:paddingStart="1.0dip"
+                android:paddingEnd="1.0dip"
             />
 
-        <com.android.keyguard.AlphaOptimizedLinearLayout
-            android:id="@+id/system_icon_area"
-            android:gravity="right"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_above="@id/clock"
-            android:orientation="horizontal"
+            <com.android.keyguard.AlphaOptimizedLinearLayout
+                android:id="@+id/system_icon_area"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
             >
-            <include layout="@layout/system_icons" />
-        </com.android.keyguard.AlphaOptimizedLinearLayout>
+                <include layout="@layout/system_icons" />
+            </com.android.keyguard.AlphaOptimizedLinearLayout>
+
+
+        </com.android.systemui.statusbar.AlphaOptimizedFrameLayout>
     </LinearLayout>
 </com.android.systemui.statusbar.phone.PhoneStatusBarView>
