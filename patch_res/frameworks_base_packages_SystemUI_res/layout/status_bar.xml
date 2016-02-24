@@ -84,10 +84,11 @@
             android:textAppearance="@style/TextAppearance.StatusBar.Clock"
             android:gravity="center"
             android:id="@id/clock"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:singleLine="true"
-            android:paddingStart="7.0dip"
+            android:paddingStart="70.0dip"
+            android:paddingEnd="70.0dip"
             />
 
         <com.android.keyguard.AlphaOptimizedLinearLayout
