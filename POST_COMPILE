@@ -1,2 +1,2 @@
-mkdir ../../img/
-cp out/target/product/hammerhead/*.img ../../img/
+mkdir ../../experimental/
+cp out/target/product/hammerhead/*.img ../../experimental/

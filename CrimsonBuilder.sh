@@ -1,6 +1,6 @@
 #! /bin/bash
 
-BRANCH=android-6.0.1_r11
+BRANCH=master
 
 mkdir -p Crimson
 cd Crimson
