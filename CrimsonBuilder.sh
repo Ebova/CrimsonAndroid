@@ -47,7 +47,7 @@ echo Patching complete. Starting to build.
 echo -------------------------------------
 
 set JAVA_OPTS="-Xms4096m -Xmx8192m"
-make -j4
+make -j1
 
 echo -----------------------------------------------
 echo Done compiling. Executing post compile scripts.
