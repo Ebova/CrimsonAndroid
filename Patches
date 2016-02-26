@@ -7,3 +7,6 @@ mv frameworks/base/packages/SystemUI/frameworks_base_packages_SystemUI_res  fram
 
 #GAPPS Permission fix
 wget https://github.com/TeamExodus/frameworks_base/raw/9c36be651e83fb039a262682839bd920b033007a/services/core/java/com/android/server/pm/DefaultPermissionGrantPolicy.java -O frameworks/base/services/core/java/com/android/server/pm/DefaultPermissionGrantPolicy.java
+
+#Heapsize fix
+cp ../../../patch_res/config.mk core/config.mk
