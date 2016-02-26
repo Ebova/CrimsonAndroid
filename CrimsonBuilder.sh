@@ -46,6 +46,7 @@ echo -------------------------------------
 echo Patching complete. Starting to build.
 echo -------------------------------------
 
+set JAVA_OPTS="-Xms4096m -Xmx8192m"
 make -j4
 
 echo -----------------------------------------------
