@@ -553,7 +553,7 @@ endif
 # Turn off jack warnings by default.
 DEFAULT_JACK_EXTRA_ARGS += --verbose error
 
-JILL := java -Xmx5500m -jar $(JILL_JAR)
+JILL := java -Xmx10240m -jar $(JILL_JAR)
 PROGUARD := external/proguard/bin/proguard.sh
 JAVATAGS := build/tools/java-event-log-tags.py
 RMTYPEDEFS := $(HOST_OUT_EXECUTABLES)/rmtypedefs
