@@ -1,6 +1,6 @@
 #! /bin/bash
 
-BRANCH=android-6.0.1_r11
+BRANCH=android-6.0.1_r17
 
 mkdir -p Crimson
 cd Crimson
@@ -9,6 +9,7 @@ echo Optimizing build environment...
 export USE_CCACHE=1
 mkdir -p CCACHE
 export CCACHE_DIR=$(pwd)/CCACHE
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/jre"
 
 echo Creating basic structures...
 mkdir -p build/bin
