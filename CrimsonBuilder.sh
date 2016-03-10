@@ -39,7 +39,7 @@ echo --------------------------
 echo Setting target device specific data...
 source build/envsetup.sh
 source ../../../DevSetup
-export TARGET_PRODUCT=$VERSION
+export PLATFORM_VERSION_CODENAME=$VERSION
 
 echo Patching Crimson mods...
 
