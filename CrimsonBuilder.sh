@@ -1,6 +1,7 @@
 #! /bin/bash
 
 BRANCH=android-6.0.1_r17
+VERSION="Crimson Codename Martian"
 
 mkdir -p Crimson
 cd Crimson
@@ -38,6 +39,7 @@ echo --------------------------
 echo Setting target device specific data...
 source build/envsetup.sh
 source ../../../DevSetup
+export TARGET_PRODUCT=$VERSION
 
 echo Patching Crimson mods...
 
