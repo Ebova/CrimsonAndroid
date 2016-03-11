@@ -11,6 +11,7 @@ export USE_CCACHE=1
 mkdir -p CCACHE
 export CCACHE_DIR=$(pwd)/CCACHE
 export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/jre"
+export PLATFORM_VERSION_CODENAME=$VERSION
 
 echo Creating basic structures...
 mkdir -p build/bin
