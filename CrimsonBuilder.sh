@@ -1,6 +1,7 @@
 #! /bin/bash
 
-BRANCH=master
+BRANCH=android-n-preview-1
+VERSION="Crimson Codename Naglon"
 
 mkdir -p Crimson
 cd Crimson
@@ -9,6 +10,8 @@ echo Optimizing build environment...
 export USE_CCACHE=1
 mkdir -p CCACHE
 export CCACHE_DIR=$(pwd)/CCACHE
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+#export PLATFORM_VERSION_CODENAME=$VERSION
 
 echo Creating basic structures...
 mkdir -p build/bin
@@ -37,6 +40,7 @@ echo --------------------------
 echo Setting target device specific data...
 source build/envsetup.sh
 source ../../../DevSetup
+#export PLATFORM_VERSION_CODENAME=$VERSION
 
 echo Patching Crimson mods...
 
@@ -46,8 +50,7 @@ echo -------------------------------------
 echo Patching complete. Starting to build.
 echo -------------------------------------
 
-set JAVA_OPTS="-Xms4096m -Xmx8192m"
-make -j1
+make -j4
 
 echo -----------------------------------------------
 echo Done compiling. Executing post compile scripts.
