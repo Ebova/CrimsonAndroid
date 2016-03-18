@@ -123,6 +123,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/spn-conf.xml:system/etc/spn-conf.xml
 
+# Bootscreen
+PRODUCT_COPY_FILES += \
+		../../../patch_res/bootanimation.zip:system/media/bootanimation.zip
+
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
