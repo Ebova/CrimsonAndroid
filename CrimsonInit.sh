@@ -16,6 +16,6 @@ sudo update-alternatives --config java
 sudo update-alternatives --config javac
 
 echo Doing device specific things...
-source DeviceInit
+source DevInit
 
 echo Everything done!
