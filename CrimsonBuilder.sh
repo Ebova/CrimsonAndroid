@@ -1,7 +1,7 @@
 #! /bin/bash
 
-BRANCH=android-6.0.1_r17
-VERSION="Crimson_Martian"
+export BRANCH=android-6.0.1_r17
+export BUILD_ID="Crimson_Martian_$(date +%m%d%H%M%S)"
 
 mkdir -p Crimson
 cd Crimson
@@ -11,7 +11,6 @@ export USE_CCACHE=1
 mkdir -p CCACHE
 export CCACHE_DIR=$(pwd)/CCACHE
 export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/jre"
-export BUILD_NUMBER=$VERSION
 
 echo Creating basic structures...
 mkdir -p build/bin
