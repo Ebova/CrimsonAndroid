@@ -1,7 +1,7 @@
 #! /bin/bash
 
 export BRANCH=android-6.0.1_r17
-export BUILD_ID="Crimson_Martian_$(date +%m%d%H%M%S)"
+export BUILD_ID="Crimson_Martian"
 
 mkdir -p Crimson
 cd Crimson
