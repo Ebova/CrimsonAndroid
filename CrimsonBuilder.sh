@@ -48,7 +48,8 @@ echo -------------------------------------
 echo Patching complete. Starting to build.
 echo -------------------------------------
 
-make -j4
+mkdir dist_output
+make -j4 dist DIST_DIR=dist_output
 
 echo -----------------------------------------------
 echo Done compiling. Executing post compile scripts.
