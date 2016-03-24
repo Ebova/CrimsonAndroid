@@ -2,4 +2,6 @@ mkdir ../../img/
 cp out/target/product/hammerhead/*.img ../../img/
 cp VERSION ../../img/
 
-./build/tools/releasetools/ota_from_target_files dist_output/hammerhead-target_files.zip ../../img/update.zip
+./build/tools/releasetools/ota_from_target_files dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip ../../img/update.zip
+md5=`md5sum ../../img/update.zip | awk '{ print $1 }'`
+echo $md5 > ../../img/checksum.md5
