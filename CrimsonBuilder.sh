@@ -48,6 +48,7 @@ echo -------------------------------------
 echo Patching complete. Starting to build.
 echo -------------------------------------
 
+date +%y%m%d%H%M > VERSION
 mkdir dist_output
 make -j4 dist DIST_DIR=dist_output
 

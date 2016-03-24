@@ -1,4 +1,5 @@
 mkdir ../../img/
 cp out/target/product/hammerhead/*.img ../../img/
+cp VERSION ../../img/
 
-./build/tools/releasetools/ota_from_target_files dist_ouput/hammerhead-target_files.zip ../../img/update.zip
+./build/tools/releasetools/ota_from_target_files dist_output/hammerhead-target_files.zip ../../img/update.zip

@@ -125,7 +125,11 @@ PRODUCT_COPY_FILES += \
 
 # Bootscreen
 PRODUCT_COPY_FILES += \
-		../../../patch_res/bootanimation.zip:system/media/bootanimation.zip
+    ../../../patch_res/bootanimation.zip:system/media/bootanimation.zip
+
+# Version information
+PRODUCT_COPY_FILES += \
+    VERSION:system/VERSION
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
