@@ -50,7 +50,7 @@ echo -------------------------------------
 
 date +%y%m%d%H%M > VERSION
 mkdir dist_output
-make -j4 dist DIST_DIR=dist_output
+make dist -j4 DIST_DIR=dist_output
 
 echo -----------------------------------------------
 echo Done compiling. Executing post compile scripts.
