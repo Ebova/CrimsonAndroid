@@ -126,6 +126,10 @@ PRODUCT_COPY_FILES += \
 # Bootscreen
 PRODUCT_COPY_FILES += \
     ../../../patch_res/bootanimation.zip:system/media/bootanimation.zip
+    
+# Precompiled OTA apk
+PRODUCT_COPY_FILES += \
+    ../../../patch_res/CrimsonOTA.apk:system/priv-app/CrimsonOTA/CrimsonOTA.apk
 
 # Version information
 PRODUCT_COPY_FILES += \
