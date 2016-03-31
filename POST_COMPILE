@@ -5,3 +5,16 @@ cp VERSION ../../img/
 ./build/tools/releasetools/ota_from_target_files dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip ../../img/update.zip
 md5=`md5sum ../../img/update.zip | awk '{ print $1 }'`
 echo $md5 > ../../img/checksum.md5
+
+$update = ../../img/update.zip
+if [ -f $update ]; then
+   echo "Creating incremental update..."
+   mv $update ../../img/previous.zip
+   ./build/tools/releasetools/ota_from_target_files -i ../../img/previous.zip dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip $update
+else
+   echo "Creating full installer"
+   ./build/tools/releasetools/ota_from_target_files dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip ../../img/update.zip
+fi
+
+md5=`md5sum ../../img/update.zip | awk '{ print $1 }'`
+echo $md5 > ../../img/checksum.md
