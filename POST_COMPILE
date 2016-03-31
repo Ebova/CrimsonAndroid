@@ -6,9 +6,10 @@ cp VERSION ../../img/
 md5=`md5sum ../../img/update.zip | awk '{ print $1 }'`
 echo $md5 > ../../img/checksum.md5
 
-$update = ../../img/update.zip
+$update='../../img/update.zip'
 if [ -f $update ]; then
    echo "Creating incremental update..."
+   rm ../../img/previous
    mv $update ../../img/previous.zip
    ./build/tools/releasetools/ota_from_target_files -i ../../img/previous.zip dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip $update
 else
