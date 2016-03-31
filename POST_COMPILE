@@ -2,12 +2,9 @@ mkdir ../../img/
 cp out/target/product/hammerhead/*.img ../../img/
 cp VERSION ../../img/
 
-update='../../img/update.zip'
-if [ -f ../../img/update.zip ]; then
+if [ -f dist_output/previous_aosp_hammerhead-target_files-eng.$(whoami).zip ]; then
    echo "Creating incremental update..."
-   rm ../../img/previous.zip
-   mv $update ../../img/previous.zip
-   ./build/tools/releasetools/ota_from_target_files -i ../../img/previous.zip dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip ../../img/update.zip
+   ./build/tools/releasetools/ota_from_target_files -i dist_output/previous_aosp_hammerhead-target_files-eng.$(whoami).zip dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip ../../img/update.zip
 else
    echo "Creating full installer"
    ./build/tools/releasetools/ota_from_target_files dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip ../../img/update.zip
