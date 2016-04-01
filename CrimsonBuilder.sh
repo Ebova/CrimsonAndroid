@@ -48,7 +48,7 @@ echo -------------------------------------
 echo Patching complete. Starting to build.
 echo -------------------------------------
 
-source PRE_COMPILE
+source ../../../PRE_COMPILE
 date +%y%m%d%H%M > VERSION
 mkdir dist_output
 make dist -j4 DIST_DIR=dist_output
