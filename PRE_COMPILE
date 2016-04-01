@@ -1,1 +1,2 @@
-mv dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip dist_output/previous_aosp_hammerhead-target_files-eng.$(whoami).zip
+mkdir ../../persist/
+mv dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip ../../persist/previous_aosp_hammerhead-target_files-eng.$(whoami).zip
