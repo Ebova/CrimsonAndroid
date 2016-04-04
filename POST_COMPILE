@@ -2,13 +2,13 @@ mkdir ../../img/
 cp out/target/product/hammerhead/*.img ../../img/
 cp VERSION ../../img/
 
-if [ -f ../../persist/previous_aosp_hammerhead-target_files-eng.$(whoami).zip ]; then
-   echo "Creating incremental update..."
-   ./build/tools/releasetools/ota_from_target_files -i ../../persist/previous_aosp_hammerhead-target_files-eng.$(whoami).zip dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip ../../img/update.zip
-else
+#if [ -f ../../persist/previous_aosp_hammerhead-target_files-eng.$(whoami).zip ]; then
+#   echo "Creating incremental update..."
+#   ./build/tools/releasetools/ota_from_target_files -i ../../persist/previous_aosp_hammerhead-target_files-eng.$(whoami).zip dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip ../../img/update.zip
+#else
    echo "Creating full installer"
    ./build/tools/releasetools/ota_from_target_files dist_output/aosp_hammerhead-target_files-eng.$(whoami).zip ../../img/update.zip
-fi
+#fi
 
 md5=`md5sum ../../img/update.zip | awk '{ print $1 }'`
 echo $md5 > ../../img/checksum.md5
