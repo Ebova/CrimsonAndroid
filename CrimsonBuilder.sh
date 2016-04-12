@@ -1,6 +1,6 @@
 #! /bin/bash
 
-export BRANCH=android-6.0.1_r20
+export BRANCH=android-6.0.1_r30
 export BUILD_ID="Crimson_Martian"
 
 mkdir -p Crimson
