@@ -3,21 +3,21 @@ initdir=$(pwd)
 mkdir -p patch_res/hammerhead_drivers
 cd patch_res/hammerhead_drivers
 
-wget https://dl.google.com/dl/android/aosp/broadcom-hammerhead-mmb29q-4332178f.tgz
-wget https://dl.google.com/dl/android/aosp/lge-hammerhead-mmb29q-995a5660.tgz
-wget https://dl.google.com/dl/android/aosp/qcom-hammerhead-mmb29q-5d820575.tgz
+wget https://dl.google.com/dl/android/aosp/broadcom-hammerhead-mob30h-c636ab9a.tgz
+wget https://dl.google.com/dl/android/aosp/lge-hammerhead-mob30h-d9f70cab.tgz
+wget https://dl.google.com/dl/android/aosp/qcom-hammerhead-mob30h-eb420a49.tgz
 
-tar xvf broadcom-hammerhead-mmb29q-4332178f.tgz
-tar xvf lge-hammerhead-mmb29q-995a5660.tgz
-tar xvf qcom-hammerhead-mmb29q-5d820575.tgz
+tar xvf broadcom-hammerhead-mob30h-c636ab9a.tgz
+tar xvf lge-hammerhead-mob30h-d9f70cab.tgz
+tar xvf qcom-hammerhead-mob30h-eb420a49.tgz
 
 ./extract-broadcom-hammerhead.sh
 ./extract-lge-hammerhead.sh
 ./extract-qcom-hammerhead.sh
 
-rm broadcom-hammerhead-mmb29q-4332178f.tgz
-rm lge-hammerhead-mmb29q-995a5660.tgz
-rm qcom-hammerhead-mmb29q-5d820575.tgz
+rm broadcom-hammerhead-mob30h-c636ab9a.tgz
+rm lge-hammerhead-mob30h-d9f70cab.tgz
+rm qcom-hammerhead-mob30h-eb420a49.tgz
 
 rm extract-broadcom-hammerhead.sh
 rm extract-lge-hammerhead.sh
