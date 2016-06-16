@@ -1,6 +1,6 @@
 source build/envsetup.sh
 echo "export BUILD_ID=$(echo $BUILD_ID)" > build/core/build_id.mk
-lunch aosp_hammerhead-user
+lunch aosp_hammerhead-userdebug
 
 cp -r ../../../patch_res/hammerhead_drivers/* .
 
